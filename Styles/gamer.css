@@ -248,6 +248,46 @@ nav a {
     height: 420px;
 }
 
+/* anniversary styles  */
+.anniversary {
+    display: flex;
+    gap: 120px;
+    margin-left: 440px;
+    margin-right: 240px;
+}
+
+.anniversary-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 0;
+    margin-top: 230px;
+}
+
+.anniversary-no-download {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anniversary-play{
+    text-align: right;
+}
+
+.anniversary-img1{
+    margin-left: 145px;
+    width: 634px;
+    height: 650px;
+}
+.anniversary-img2{
+    position: relative;
+    bottom: 290px;
+    width: 318px;
+    height: 365px;
+}
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
     nav {
@@ -295,9 +335,38 @@ nav a {
     .services {
         margin: 80px 5px;
     }
+
     .card {
         flex-direction: column;
         gap: 24px;
         margin-top: 80PX;
+        margin-bottom: 0;
     }
+
+    .anniversary {
+        flex-direction: column;
+        gap: 70px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .anniversary-img1{
+        margin-left: 20%;
+        width: 80%;
+        height: 80%;
+    }
+    .anniversary-img2{
+        position: relative;
+        bottom: 90px;
+        width: 130px;
+        height: 160px;
+    }
+    .anniversary-title, .anniversary-play, .anniversary-no-download {
+        text-align: center;
+    }
+    .anniversary-title{
+        margin-top: 0;
+    }
+    
 }
