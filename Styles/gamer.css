@@ -251,9 +251,10 @@ nav a {
 /* anniversary styles  */
 .anniversary {
     display: flex;
-    gap: 120px;
+    gap: 115px;
     margin-left: 440px;
     margin-right: 240px;
+    margin-bottom: 0;
 }
 
 .anniversary-title {
@@ -272,20 +273,108 @@ nav a {
     -webkit-text-fill-color: transparent;
 }
 
-.anniversary-play{
+.anniversary-play {
     text-align: right;
 }
 
-.anniversary-img1{
+.anniversary-img1 {
     margin-left: 145px;
     width: 634px;
     height: 650px;
 }
-.anniversary-img2{
+
+.anniversary-img2 {
     position: relative;
-    bottom: 290px;
+    bottom: 250px;
     width: 318px;
     height: 365px;
+}
+
+/* anywhere styles */
+.anywhere {
+    display: flex;
+    gap: 310px;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 0;
+}
+
+.anywhere-title {
+    text-align: left;
+}
+
+.anywhere-details {
+    text-align: left;
+}
+
+.anywhere-img1 {
+    width: 634px;
+    height: 650px;
+}
+
+.anywhere-img2 {
+    position: relative;
+    bottom: 250px;
+    left: 450px;
+    width: 318px;
+    height: 365px;
+}
+
+/* careers styles */
+
+.careers {
+    display: flex;
+    height: 821px;
+    padding-left: 240px;
+    align-items: center;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.career-title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.career-description {
+    width: 680px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.data-container {
+    display: flex;
+    gap: 97px;
+}
+
+.data1 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.data2 {
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.btn2 {
+    margin-top: 40px;
+    padding: 21px 40px;
+    border-radius: 48px;
+    border: none;
+    background: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF42A5;
 }
 
 /* responsive styles */
@@ -351,22 +440,82 @@ nav a {
         margin-top: 0;
     }
 
-    .anniversary-img1{
+    .anniversary-img1 {
         margin-left: 20%;
         width: 80%;
-        height: 80%;
+        height: 90%;
     }
-    .anniversary-img2{
+
+    .anniversary-img2 {
         position: relative;
         bottom: 90px;
         width: 130px;
         height: 160px;
     }
-    .anniversary-title, .anniversary-play, .anniversary-no-download {
+
+    .anniversary-title,
+    .anniversary-play,
+    .anniversary-no-download {
         text-align: center;
     }
-    .anniversary-title{
+
+    .anniversary-title {
         margin-top: 0;
     }
+
+    .anywhere {
+        flex-direction: column-reverse;
+        gap: 70px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .anywhere-img1 {
+        margin-right: 0;
+        width: 80%;
+        height: 90%;
+    }
+
+    .anywhere-img2 {
+        position: relative;
+        bottom: 90px;
+        left: 240px;
+        width: 120px;
+        height: 160px;
+    }
+
+    .careers {
+        flex-direction: column;
+        width: 100%;
+        height: 1300px;
+        padding-left: 10px;
+    }
+
+    .career-description {
+        width: 90%;
+        padding: 10px;
+
+    }
+    .data-container {
+        gap: 20px;
+        padding: 20px;
+    }
+
+
+    .data1 {
+        font-size: 10px;
+        font-weight: 400;
+    }
     
+    .data2 {
+        text-align: right;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .careers-img{
+        width: 90%;
+        margin: 100px 10px;
+    }
+
 }
